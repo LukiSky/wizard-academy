@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wizard-academy",
+      "runtimeExecutable": "./run.sh",
+      "runtimeArgs": ["--no-tts"],
+      "port": 8770
+    }
+  ]
+}
