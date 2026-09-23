@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wizard Academy — sign language spelling</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- The child's half ---------------------------------------------------- -->
+<main id="scene">
+  <div class="sky"><span class="moon"></span><div class="stars"></div></div>
+  <div class="castle"></div>
+
+  <header id="top">
+    <p id="word" class="word"></p>
+
+    <!-- How much of the spell is cast, and what the child should be doing. -->
+    <div id="spell" class="spell">
+      <div class="spell-bar"><span id="spell-fill"></span></div>
+      <p class="spell-line">
+        <b id="spell-phase">Getting ready</b>
+        <span id="spell-count"></span>
+      </p>
+    </div>
+  </header>
+
+  <div id="stage" class="stage">
+    <img class="wizard-poster" src="assets/wizard/poster.png" alt="" aria-hidden="true">
+  </div>
+
+  <figure id="sign" hidden>
+    <img id="sign-img" alt="">
+    <figcaption><b id="sign-letter"></b><span id="sign-label"></span></figcaption>
+  </figure>
+
+
+  <!-- The one thing the child can say to the wizard, kept visible. -->
+  <div class="scene-foot">
+  <p id="help-hint" class="help-hint" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22">
+      <g fill="none" stroke="currentColor" stroke-width="1.9"
+         stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9.2 11.4 7.6 5.1"/><path d="M12.6 11.1l1.7-6.2"/>
+        <path d="M15.6 12.2l1.5-2.6"/>
+        <path d="M6.6 11.9c-1.3.5-1.8 1.7-1.3 3.2l1.2 3.1c.8 2 2.5 3 5 3
+                 3.2 0 5.2-1.5 5.9-4.2l.9-3.4"/>
+      </g>
+    </svg>
+    <span>Stuck? Make a <b>peace sign</b> &middot; shake your head for no</span>
+  </p>
+
+  <p id="mismatch" class="mismatch" role="alert" hidden></p>
+
+  <p id="caption" class="caption" aria-live="polite"></p>
+  </div>
+
+  <div id="burst" class="burst" hidden></div>
+
+  <!-- The one question the game asks out loud -->
+  <div id="yesno" class="yesno" hidden>
+    <p>Show you the spell book?</p>
+    <div><button data-v="yes">Yes please</button><button data-v="no">No, I've got it</button></div>
+    <small>nod for yes &middot; shake your head for no</small>
+  </div>
+
+  <!-- 7_Report -->
+  <div id="report" class="report" hidden>
+    <div class="card">
+      <div id="report-body"></div>
+      <div class="actions">
+        <button id="again" class="primary">Cast another spell</button>
+        <button id="stop">That's enough magic</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shown until the clips are in and the first click has unlocked audio -->
+  <div id="gate" class="gate">
+    <h1>Wizard Academy</h1>
+    <p class="tag">Spell words in sign language, and the magic happens.</p>
+    <p id="loading" class="loading">Loading the wizard…</p>
+    <button id="begin" class="primary" disabled>Begin</button>
+    <p id="status" class="status"></p>
+  </div>
+</main>
+
+<!-- The child's own hands. Source depends on who has the camera. -->
+<aside id="selfview" class="selfview" data-size="small" hidden>
+  <img alt="your hands, as the recogniser sees them" hidden>
+  <video muted playsinline hidden></video>
+  <div class="sv-bar">
+    <span class="sv-label"></span>
+    <button class="sv-resize" title="bigger or smaller" aria-label="resize">⤢</button>
+    <button class="sv-close" title="hide" aria-label="hide">×</button>
+  </div>
+</aside>
+
+<!-- The developer's half ------------------------------------------------ -->
+<aside id="rail" class="rail">
+  <h2>Telemetry <button id="rail-toggle" title="hide">×</button></h2>
+
+  <section>
+    <h3>State</h3>
+    <p id="state" class="state">—</p>
+    <p id="clock" class="clock"></p>
+    <p class="target-line">target letter <b id="target">—</b></p>
+  </section>
+
+  <section>
+    <h3>Reading</h3>
+    <div id="tele" class="tele"></div>
+  </section>
+
+  <section>
+    <h3>Rule that fired</h3>
+    <p id="verdict" class="verdict"></p>
+  </section>
+
+  <section>
+    <h3>Wizard turns <small>n8n</small></h3>
+    <ul id="log" class="log"></ul>
+  </section>
+
+  <section>
+    <h3>Keyboard <b id="keys" class="keys"></b></h3>
+    <ul id="help" class="help"></ul>
+  </section>
+</aside>
+
+<button id="rail-show" class="rail-show" title="show telemetry">⌗</button>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

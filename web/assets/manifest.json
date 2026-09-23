@@ -1,0 +1,260 @@
+{
+  "actions": {
+    "idle": {
+      "file": "wizard/idle.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Player_walking_in_place",
+      "bytes": 1661554,
+      "loop": true
+    },
+    "thinking": {
+      "file": "wizard/thinking.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_thinking_gesture",
+      "bytes": 885333,
+      "loop": true
+    },
+    "listening": {
+      "file": "wizard/listening.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_performing_silent_talk",
+      "bytes": 828889,
+      "loop": true
+    },
+    "ready": {
+      "file": "wizard/ready.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Player_preparing_combat_stance",
+      "bytes": 1535515,
+      "loop": true
+    },
+    "hello": {
+      "file": "wizard/hello.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Player_waving_hello",
+      "bytes": 827069,
+      "in": 1.42,
+      "out": 4.82,
+      "loop": false
+    },
+    "magic": {
+      "file": "wizard/magic.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Player_charging_unstable_wand_en",
+      "bytes": 1618903,
+      "in": 6.6,
+      "out": 10.0,
+      "loop": false
+    },
+    "teach": {
+      "file": "wizard/teach.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_making_silent_talking",
+      "bytes": 1265763,
+      "in": 4.14,
+      "out": 7.54,
+      "loop": false
+    },
+    "call_back": {
+      "file": "wizard/call_back.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_performs_telepathy_ges",
+      "bytes": 867597,
+      "in": 1.39,
+      "out": 4.79,
+      "loop": false
+    },
+    "correct": {
+      "file": "wizard/correct.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_performing_surprise_ge",
+      "bytes": 1090251,
+      "in": 5.89,
+      "out": 9.29,
+      "loop": false
+    },
+    "correct_alt": {
+      "file": "wizard/correct_alt.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Player_performing_surprise_gesture",
+      "bytes": 1051252,
+      "in": 2.0,
+      "out": 5.4,
+      "loop": false
+    },
+    "try_again": {
+      "file": "wizard/try_again.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_gesturing_to_try_again",
+      "bytes": 748460,
+      "in": 3.08,
+      "out": 6.48,
+      "loop": false
+    },
+    "try_again_alt": {
+      "file": "wizard/try_again_alt.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_gesturing_try_again",
+      "bytes": 739499,
+      "in": 2.92,
+      "out": 6.32,
+      "loop": false
+    },
+    "one_hand": {
+      "file": "wizard/one_hand.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_performs_angry_gesture",
+      "bytes": 1234444,
+      "in": 1.08,
+      "out": 4.48,
+      "loop": false
+    },
+    "groan": {
+      "file": "wizard/groan.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_performing_disgust_ges",
+      "bytes": 1255773,
+      "in": 1.55,
+      "out": 4.95,
+      "loop": false
+    },
+    "fading": {
+      "file": "wizard/fading.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_performs_sad_gesture",
+      "bytes": 1279142,
+      "in": 6.6,
+      "out": 10.0,
+      "loop": false
+    },
+    "worried": {
+      "file": "wizard/worried.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_performing_fear_gesture",
+      "bytes": 1526490,
+      "in": 5.3,
+      "out": 8.7,
+      "loop": false
+    },
+    "charge": {
+      "file": "wizard/charge.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Player_preparing_for_fight",
+      "bytes": 1410133,
+      "in": 4.89,
+      "out": 8.29,
+      "loop": false
+    },
+    "celebrate": {
+      "file": "wizard/celebrate.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Player_performing_cheer_gesture",
+      "bytes": 1149484,
+      "in": 0.92,
+      "out": 4.32,
+      "loop": false
+    },
+    "laugh": {
+      "file": "wizard/laugh.webm",
+      "frames": 240,
+      "seconds": 10.0,
+      "source": "Character_laughing_in_scene",
+      "bytes": 1056626,
+      "in": 3.05,
+      "out": 6.45,
+      "loop": false
+    }
+  },
+  "signs": {
+    "asl": {
+      "A": "signs/asl/A.png",
+      "B": "signs/asl/B.png",
+      "C": "signs/asl/C.png",
+      "D": "signs/asl/D.png",
+      "E": "signs/asl/E.png",
+      "F": "signs/asl/F.png",
+      "G": "signs/asl/G.png",
+      "H": "signs/asl/H.png",
+      "I": "signs/asl/I.png",
+      "J": "signs/asl/J.png",
+      "K": "signs/asl/K.png",
+      "L": "signs/asl/L.png",
+      "M": "signs/asl/M.png",
+      "N": "signs/asl/N.png",
+      "O": "signs/asl/O.png",
+      "P": "signs/asl/P.png",
+      "Q": "signs/asl/Q.png",
+      "R": "signs/asl/R.png",
+      "S": "signs/asl/S.png",
+      "T": "signs/asl/T.png",
+      "U": "signs/asl/U.png",
+      "V": "signs/asl/V.png",
+      "W": "signs/asl/W.png",
+      "X": "signs/asl/X.png",
+      "Y": "signs/asl/Y.png",
+      "Z": "signs/asl/Z.png"
+    },
+    "auslan": {
+      "A": "signs/auslan/A.png",
+      "B": "signs/auslan/B.png",
+      "C": "signs/auslan/C.png",
+      "D": "signs/auslan/D.png",
+      "E": "signs/auslan/E.png",
+      "F": "signs/auslan/F.png",
+      "G": "signs/auslan/G.png",
+      "H": "signs/auslan/H.png",
+      "I": "signs/auslan/I.png",
+      "K": "signs/auslan/K.png",
+      "L": "signs/auslan/L.png",
+      "M": "signs/auslan/M.png",
+      "N": "signs/auslan/N.png",
+      "O": "signs/auslan/O.png",
+      "P": "signs/auslan/P.png",
+      "Q": "signs/auslan/Q.png",
+      "R": "signs/auslan/R.png",
+      "S": "signs/auslan/S.png",
+      "T": "signs/auslan/T.png",
+      "U": "signs/auslan/U.png",
+      "V": "signs/auslan/V.png",
+      "W": "signs/auslan/W.png",
+      "X": "signs/auslan/X.png",
+      "Y": "signs/auslan/Y.png",
+      "Z": "signs/auslan/Z.png",
+      "0": "signs/auslan/0.png",
+      "1": "signs/auslan/1.png",
+      "2": "signs/auslan/2.png",
+      "3": "signs/auslan/3.png",
+      "4": "signs/auslan/4.png",
+      "5": "signs/auslan/5.png",
+      "6": "signs/auslan/6.png",
+      "7": "signs/auslan/7.png",
+      "8": "signs/auslan/8.png",
+      "9": "signs/auslan/9.png"
+    }
+  },
+  "crop": {
+    "w": 892,
+    "h": 704,
+    "x": 128,
+    "y": 0
+  },
+  "fps": 24
+}

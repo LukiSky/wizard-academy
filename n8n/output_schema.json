@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "properties": {
+    "say": {
+      "type": "string",
+      "description": "What the wizard says aloud. Required, never empty."
+    },
+    "caption": {
+      "type": "string",
+      "description": "On-screen text, if it should differ from say."
+    },
+    "action": {
+      "type": "string",
+      "description": "One animation name: hello, magic, teach, listening, thinking, correct, correct_alt, try_again, try_again_alt, one_hand, groan, call_back, fading, worried, charge, celebrate, laugh"
+    },
+    "report": {
+      "type": "object",
+      "description": "ONLY on the report turn. Omit it on every other turn.",
+      "properties": {
+        "stars": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "headline": {
+          "type": "string"
+        },
+        "strengths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "practice": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note_for_grownups": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "stars",
+        "headline",
+        "strengths",
+        "practice",
+        "note_for_grownups"
+      ]
+    }
+  },
+  "required": [
+    "say"
+  ]
+}
